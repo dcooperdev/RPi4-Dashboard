@@ -1,0 +1,68 @@
+{
+    "trading_state": {
+        "active_positions": [
+            {
+                "position_id": "POS-9921",
+                "bot_id": "BOT-a91c",
+                "symbol": "BTC/USDT",
+                "side": "LONG",
+                "entry_price": 63850.00,
+                "current_price": 64250.50,
+                "amount": 0.05,
+                "leverage": 5,
+                "unrealized_pnl": 120.25,
+                "pnl_percentage": 1.88,
+                "stop_loss": 63200.00,
+                "take_profit": 65500.00,
+                "opened_at": "2026-05-11T14:20:00Z",
+                "status": "OPEN"
+            },
+            {
+                "position_id": "POS-8842",
+                "bot_id": "BOT-7fb2",
+                "symbol": "ETH/USDT",
+                "side": "SHORT",
+                "entry_price": 3480.00,
+                "current_price": 3450.25,
+                "amount": 1.2,
+                "leverage": 3,
+                "unrealized_pnl": 35.70,
+                "pnl_percentage": 0.85,
+                "stop_loss": 3520.00,
+                "take_profit": 3350.00,
+                "opened_at": "2026-05-11T15:05:00Z",
+                "status": "OPEN"
+            }
+        ],
+        "order_history": [
+            {
+                "order_id": "ORD-5521",
+                "symbol": "SOL/USDT",
+                "side": "BUY",
+                "type": "LIMIT",
+                "status": "FILLED",
+                "price": 142.50,
+                "amount": 20.0,
+                "timestamp": "2026-05-11T10:30:00Z"
+            },
+            {
+                "order_id": "ORD-5522",
+                "symbol": "SOL/USDT",
+                "side": "SELL",
+                "type": "MARKET",
+                "status": "FILLED",
+                "price": 145.10,
+                "amount": 20.0,
+                "timestamp": "2026-05-11T12:15:00Z",
+                "final_pnl": 52.00
+            }
+        ],
+        "account_summary": {
+            "total_balance_usdt": 15450.75,
+            "margin_used": 1250.00,
+            "available_margin": 14200.75,
+            "daily_pnl": 87.70,
+            "bot_status": "RUNNING"
+        }
+    }
+}
