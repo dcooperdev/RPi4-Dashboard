@@ -9,7 +9,7 @@ A highly optimized, fault-tolerant React dashboard designed specifically for res
 
 ## 🌐 Live Demo
 
-**[Ver demostración en vivo](hhttps://dcooperdev.github.io/RPi4-Dashboard/)**
+[See the live demo](https://dcooperdev.github.io/RPi4-Dashboard/)
 
 ## 🏗️ Architectural Decisions & Engineering Constraints
 
