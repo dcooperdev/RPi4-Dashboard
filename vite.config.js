@@ -19,10 +19,10 @@ export default defineConfig({
       ],
       all: true, // Fuerz a que analice archivos aunque no tengan tests escritos
       thresholds: {
-        lines: 80,
-        functions: 80,
-        branches: 80,
-        statements: 80
+        lines: 95,
+        functions: 95,
+        branches: 95,
+        statements: 95
       }
     },
   },
