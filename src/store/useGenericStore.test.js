@@ -87,4 +87,36 @@ describe('useGenericStore Unit Tests', () => {
             expect(history[1]).toBe(previousFirstRecord);
         });
     });
+
+    describe('Global Actions', () => {
+        it('should update online status', () => {
+            useGenericStore.getState().setOnlineStatus(true);
+            expect(useGenericStore.getState().isOnline).toBe(true);
+            
+            useGenericStore.getState().setOnlineStatus(false);
+            expect(useGenericStore.getState().isOnline).toBe(false);
+        });
+
+        it('should update hardware data partially', () => {
+            const newData = { cpu: 45, ram: 60 };
+            useGenericStore.getState().setHardwareData(newData);
+            
+            const hardware = useGenericStore.getState().hardwareData;
+            expect(hardware.cpu).toBe(45);
+            expect(hardware.ram).toBe(60);
+            expect(hardware.sd).toBe(0); // preserved from initial state
+        });
+    });
+
+    describe('Bot Management (Extended)', () => {
+        it('should use default values when registering a bot with minimal data', () => {
+            const botId = 'BOT-DEFAULT';
+            useGenericStore.getState().registerBot(botId, {});
+            
+            const bot = useGenericStore.getState().bots[botId];
+            expect(bot.version).toBe('1.0');
+            expect(bot.genome).toBe('default');
+            expect(bot.metrics.successRate).toBe(0);
+        });
+    });
 });
