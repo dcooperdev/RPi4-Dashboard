@@ -7,6 +7,10 @@
 
 A highly optimized, fault-tolerant React dashboard designed specifically for resource-constrained environments (Raspberry Pi 4). It provides real-time monitoring of cryptocurrency assets, hardware metrics, and autonomous trading agents.
 
+## 🌐 Live Demo
+
+**[Ver demostración en vivo](hhttps://dcooperdev.github.io/RPi4-Dashboard/)**
+
 ## 🏗️ Architectural Decisions & Engineering Constraints
 
 This project was built to address specific hardware limitations and ensure high availability in production:
